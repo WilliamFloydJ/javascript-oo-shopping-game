@@ -8,13 +8,13 @@ const player = {
   name,
   score,
   items,
-  getCurrentScore: () => {
+  getCurrentScore() {
     return this.score;
   },
-  addPoints: (points) => {
+  addPoints(points) {
     this.score = this.score + points;
   },
-  deductPoints: (points) => {
+  deductPoints(points) {
     this.score = this.score - points;
   },
 };
