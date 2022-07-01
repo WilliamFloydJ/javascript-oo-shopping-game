@@ -9,7 +9,7 @@ const player = {
   score,
   items,
   getCurrentScore: () => {
-    this.score;
+    return this.score;
   },
   addPoints: (points) => {
     this.score += points;
