@@ -12,10 +12,10 @@ const player = {
     return this.score;
   },
   addPoints: (points) => {
-    this.score += points;
+    this.score = this.score + points;
   },
   deductPoints: (points) => {
-    this.score -= points;
+    this.score = this.score - points;
   },
 };
 // Define the Product class - write the Constructor function for Product class here
