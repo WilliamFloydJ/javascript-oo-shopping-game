@@ -25,12 +25,12 @@ function Product(id, name, price, expiryDate) {
   this.price = price;
   this.expiryDate = expiryDate;
   this.getDetails = () => {
-      return `Product Name: ${this.name} , Product Price: ${this.price}`;
-    };
+    return `Product Name: ${this.name} , Product Price: ${this.price}`;
+  };
 }
 // Complete the dateDiff function
 const dateDiff = (date1, date2) => {
-  const timeDiff = math.abs(date1 - date2);
+  const timeDiff = Math.abs(date1 - date2);
   return Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 };
 
