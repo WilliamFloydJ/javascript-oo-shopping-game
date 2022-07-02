@@ -52,10 +52,10 @@ function MagicProduct(id, name, price, expiryDate, points, isBonus) {
 MagicProduct.prototype = Object.create(Product.prototype);
 // Define Rating class here
 class Rating {
-  constructor(rate) {
-    this.rate = rate;
+  constructor() {
+    this.rate = "";
   }
-  setRating(value) {
+  set rating(value) {
     if (value > 1 && value <= 4) {
       this.rate = "OK";
     } else if (value >= 5 && value <= 7) {
