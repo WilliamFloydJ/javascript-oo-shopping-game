@@ -238,9 +238,9 @@ function loadMasterData() {
 
 // Complete this function
 const findProductById = (id) => {
-  const product = Product.prototype;
+  const Product = new Product();
   return function () {
-    if (id === product.id) {
+    if (id === Product.id) {
       return true;
     } else {
       return false;
